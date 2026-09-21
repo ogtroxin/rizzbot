@@ -119,7 +119,7 @@ Give practical and honest help.
 `
 };
 const response = await client.responses.create({
-  model: process.env.OPENAI_MODEL || "gpt-5.6-luna",
+  model: process.env.OPENAI_MODEL || "gpt-5.6-terra",
 
   instructions: `
 ${RIZZBOT_INSTRUCTIONS}
