@@ -395,6 +395,133 @@ textarea:focus{
   }
 
 }
+  /* ===== RIZZBOT ANIMATIONS ===== */
+
+/* Chat message entrance */
+.bubble {
+  animation: messageIn 0.3s ease-out;
+}
+
+@keyframes messageIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Welcome screen */
+.welcome {
+  animation: welcomeIn 0.6s ease-out;
+}
+
+@keyframes welcomeIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mode buttons */
+.mode-btn {
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mode-btn:hover {
+  transform: translateX(4px);
+  box-shadow: 0 0 12px rgba(160, 90, 255, 0.18);
+}
+
+.mode-btn:active {
+  transform: scale(0.96);
+}
+
+/* Send button */
+.send {
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.send:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(160, 90, 255, 0.35);
+}
+
+.send:active {
+  transform: scale(0.94);
+}
+
+/* New chat button */
+.new-chat {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.new-chat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 14px rgba(160, 90, 255, 0.25);
+}
+
+.new-chat:active {
+  transform: scale(0.96);
+}
+
+/* Discord button */
+.discord {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.discord:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 14px rgba(160, 90, 255, 0.25);
+}
+
+/* Textarea focus */
+textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+textarea:focus {
+  box-shadow: 0 0 14px rgba(160, 90, 255, 0.12);
+}
+
+/* Online indicator */
+.online {
+  animation: onlinePulse 2s infinite;
+}
+
+@keyframes onlinePulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+/* Logo glow */
+.logo {
+  animation: logoGlow 3s ease-in-out infinite;
+}
+
+@keyframes logoGlow {
+  0%, 100% {
+    text-shadow: 0 0 0 transparent;
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(160, 90, 255, 0.35);
+  }
+}
+
+/* Smooth scrolling */
+.chat {
+  scroll-behavior: smooth;
+}
 </style>
 </head>
 
